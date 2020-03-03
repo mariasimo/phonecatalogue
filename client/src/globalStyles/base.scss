@@ -9,11 +9,35 @@ body {
     font-size: 16px;
     font-family: $font-main;
     line-height: $lh-body;
+    background-color: lighten($light-grey, 10);
+}
+
+.wrapper {
+    max-width: $max-width;
+    padding: $m4 $m2;
+    width: $width;
+}
+
+main:not(.home) {
+    margin-top: 8rem;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    box-shadow: 0 0 8px rgba($grey, .5);
+    border-bottom: 1px solid darken($primary-bg, 5);
+    z-index: 2;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 p {
     font-size: $f4;
-    margin-bottom: $m3;
     font-weight: 100;
 }
 
@@ -21,6 +45,13 @@ h1 {
     font-size: $f2;
     font-weight: 700;
     line-height: $lh-heading;
+    letter-spacing: -0.025em;
+}
+
+.small {
+    color: $medium-grey;
+    font-size: $f5;
+    margin-top: $m7;
 }
 
 @mixin button($color, $bg) {
@@ -36,12 +67,23 @@ h1 {
     text-decoration: none;
     transition: all ease-in-out .3s;
 
-
     &:hover {
         background-color: darken($bg, 3);
         color: darken($color, 3)
     }
 }
+
+.tag {
+    text-transform: uppercase;
+    font-size: $f4;
+    font-weight: 600;
+    color: $primary-bg;
+    background: $light-grey;
+    display: inline;
+    padding: $m7 $m6;
+    border-radius: .2rem;
+}
+
 
 .btn {
     @include button($white, $dark-primary);

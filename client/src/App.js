@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import  { Switch, Route} from 'react-router-dom';
-import PhoneList from './components/PhoneList';
-import PhoneDetail from './components/PhoneDetail';
+import PhoneList from './components/PhoneList/PhoneList';
 import Home from './components/Home/Home';
 import './globalStyles/base.scss';
-import Navbar from './components/Navbar/Navbar';
+import PhoneDetails from './components/PhoneDetails/PhoneDetails';
 
 
 class App extends Component {    
   render() {
     return(
-        < >
-        <Navbar/>
         <Switch>
           <Route
             path="/"
@@ -25,11 +22,9 @@ class App extends Component {
           />
           <Route
             path="/phones/:id"
-            exact
-            component={PhoneDetail}
+            component={PhoneDetails}
           />
         </Switch>
-        </>
     )
   }
 }

@@ -1,0 +1,13 @@
+@import '../../globalStyles/variables.scss';
+
+.loader{
+    margin: 0 auto;
+    width: 100px; 
+    height: 100px; 
+    background-image: url('http://localhost:3001/loading.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+

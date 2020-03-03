@@ -3,9 +3,31 @@
 nav {
     padding: $m4 $m2 $m5;
     background-color: $primary-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .logo img{
         max-width:12rem;
         height: 2.4rem;
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+        font-size: $f5;
+        margin: 0 0 $m6;
+
+        li {
+            margin-right: $m5;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $dark;
+            }
+        }
     }
 }

@@ -3,24 +3,27 @@
 main.home {
     background: $primary-bg;
     color: $dark;
+    height: 88vh;
 
     .wrapper{
+        height: 100%;
         display: flex;
         align-items: flex-start;
-        max-width: $max-width;
-        height: 95vh;
-        padding: 0 $m2 $m1;
-        width: $width;
         z-index: 1;
+        padding-bottom: $m1;
 
         .content {
             align-self: center;
             width: 50%;
-            margin-right: $m2;
+            
+            p {
+                margin-bottom: $m3;
+            }
         }
 
         .image {
             width: 50%;
+            position:relative;
 
             img {
                 width: 100%;

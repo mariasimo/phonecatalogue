@@ -1,0 +1,27 @@
+@import '../../globalStyles/variables.scss';
+
+.phone-detail {
+    .wrapper {
+        display: flex;
+
+        > div  {
+            width: 50%;
+        }
+
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            padding: $m3;
+        }
+    }
+    h1 {
+        color: $grey;
+    }
+}
+
+
+

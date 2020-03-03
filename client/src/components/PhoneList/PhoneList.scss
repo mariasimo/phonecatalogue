@@ -1,0 +1,20 @@
+@import '../../globalStyles/variables.scss';
+
+main.phone-list {
+    h1 {
+        color: $dark-primary;
+        margin-bottom: $m4;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -1%;
+       
+        > div {
+            width: 31.333%;
+            margin: 1%;
+        }
+    }
+}
+
