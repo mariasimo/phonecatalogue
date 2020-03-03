@@ -1,0 +1,48 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Public+Sans:300,400,600,700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: $font-main;
+    line-height: $lh-body;
+}
+
+p {
+    font-size: $f4;
+    margin-bottom: $m3;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: $f2;
+    font-weight: 700;
+    line-height: $lh-heading;
+}
+
+@mixin button($color, $bg) {
+    background-color: $bg;
+    border: 0;
+    border-radius: .2rem;
+    color: $color;
+    cursor: pointer; 
+    font-size: $f5;
+    font-weight: 500;
+    padding: $m5 $m4;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+
+
+    &:hover {
+        background-color: darken($bg, 3);
+        color: darken($color, 3)
+    }
+}
+
+.btn {
+    @include button($white, $dark-primary);
+}

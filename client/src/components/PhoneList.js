@@ -1,16 +1,15 @@
-import React, {useState, useEffect} from 'react'
-import { connect, useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from 'react'
+import { connect, useDispatch } from 'react-redux';
 import PhoneItem from './PhoneItem';
 import { startGetPhones } from '../actions';
 
 function PhoneList(props) {
     const dispatch = useDispatch();
-    const [phones, setPhones] = useState([]);
+    const phones = props.phones;
    
     useEffect(_ => {
         if(phones.length === 0) {
             dispatch(startGetPhones());
-            setPhones([{}, {}])
         }
     })
 

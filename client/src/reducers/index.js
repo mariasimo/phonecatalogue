@@ -7,7 +7,7 @@ const initState = {
 const reducer = (state = initState, action) => {
     console.log(action)
     switch(action.type) {
-        case 'SUCCESS_GET_PHONES': 
+        case Types.SUCCESS_GET_PHONES: 
             return {
                 phones: action.results
             }

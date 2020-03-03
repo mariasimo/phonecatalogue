@@ -1,0 +1,34 @@
+@import '../../globalStyles/variables.scss';
+
+main.home {
+    background: $primary-bg;
+    color: $dark;
+
+    .wrapper{
+        display: flex;
+        align-items: flex-start;
+        max-width: $max-width;
+        height: 95vh;
+        padding: 0 $m2 $m1;
+        width: $width;
+        z-index: 1;
+
+        .content {
+            align-self: center;
+            width: 50%;
+            margin-right: $m2;
+        }
+
+        .image {
+            width: 50%;
+
+            img {
+                width: 100%;
+                position: absolute;
+                max-width: 48rem;
+                top: -4rem;
+                right: -4rem;
+            }
+        }
+    }
+}

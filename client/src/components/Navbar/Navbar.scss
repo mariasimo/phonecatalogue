@@ -1,0 +1,11 @@
+@import '../../globalStyles/variables.scss';
+
+nav {
+    padding: $m4 $m2 $m5;
+    background-color: $primary-bg;
+
+    .logo img{
+        max-width:12rem;
+        height: 2.4rem;
+    }
+}
