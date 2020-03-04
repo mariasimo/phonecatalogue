@@ -20,7 +20,7 @@ Project is divided in two main folders. Client and Server.
 In order to start the project, you have to create a .env file at the server folder and write in it:
 
 ```
-ENV=development
+PORT=3000
 ```
 
 
