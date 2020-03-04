@@ -23,10 +23,10 @@ const PhoneList = () => {
         <Navbar isHome={false}/>
         <main className="phone-list">
             <div className="wrapper">
-                <h1>Phone List </h1>
+                <h1>Phone List</h1>
                 <div className="content">
                     {error 
-                    ?   <p class="error">{error}</p> 
+                    ?   <p>{error}</p> 
                     :   (phones.length 
                         ? phones.map(phone => (
                             <PhoneItem key={phone.id} phone={phone}/>

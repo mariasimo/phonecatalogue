@@ -23,9 +23,11 @@ const PhoneDetail = () => {
         <Navbar isHome={false}/>
         <main className="phone-detail">
             <div className="wrapper">
-            <div><h1>Phone Detail</h1></div>
             {error 
-                ?   <p class="error">{error}</p> 
+                ?   (<div class="error">
+                        <h1>Phone Detail</h1>
+                        <p class="error">{error}</p>
+                    </div>)
                 :   ( phone 
                     ? ( <>
                         <div className="image card">
