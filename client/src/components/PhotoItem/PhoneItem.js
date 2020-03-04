@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './PhoneItem.scss'
 
-export default function PhoneItem(props) {
+const PhoneItem = (props) => {
     const {phone} = props;
     return (
         <div className="phone-card card">
@@ -17,3 +17,5 @@ export default function PhoneItem(props) {
         </div>
     )
 }
+
+export default PhoneItem;

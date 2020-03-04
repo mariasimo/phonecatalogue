@@ -7,7 +7,7 @@ export default function Navbar(props) {
         // If im home render different styles
         <nav className={!props.isHome && "fixed"}>
             <div className="logo">
-                <a href="/"><img src="/logo.png"></img></a>
+                <a href="/"><img src="/logo.png" alt="PhoneGuide"></img></a>
             </div>
             {!props.isHome && (
                 <ul className="menu">

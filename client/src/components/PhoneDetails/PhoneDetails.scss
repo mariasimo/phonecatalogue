@@ -43,8 +43,14 @@
                     padding: $m6;
                 }
 
-                p {
-                    margin: $m6 0;
+                ul {
+                    margin-left: 0;
+                    padding: 0;
+                    list-style: none;
+                    
+                    li span {
+                        font-weight: 500;
+                    }
                 }
             }
         }
