@@ -17,7 +17,7 @@ git clone https://github.com/mariasimo/phonecatalogue.git
 
 Project is divided in two main folders. Client and Server.
 
-In order to start the project, you have to create a .env file at the server folder and write in it:
+In order to start the project, you have to create a .env file at the **server** folder and write in it:
 
 ```
 PORT=3000
@@ -27,16 +27,18 @@ PORT=3000
 Start the **server** with command:
 
 ```
+npm i
 npm run dev
 ```
 
 And then, start **client** with command:
 
 ```
+npm i
 npm start
 ```
-
-Visit http://localhost:3000
+After you run these commands, in the terminal you may get this message: *Would you like to run the app on another port instead? (Y/n)* Write "Y" and 'enter'. 
+Go visit the site at http://localhost:3001 (it may be other port, it will indicated at the terminal)
 
 
 ## 🏗 Built with
