@@ -1,7 +1,7 @@
 @import '../../globalStyles/variables.scss';
 
 nav {
-    padding: $m4 $m2 $m5;
+    padding: $m4;
     background-color: $primary-bg;
     display: flex;
     justify-content: space-between;
@@ -29,5 +29,12 @@ nav {
                 color: $dark;
             }
         }
+    }
+
+    @media(min-width:$bp-medium) {
+        padding: $m4 $m3;
+    }
+    @media(min-width:$bp-large) {
+        padding: $m4 $m2;
     }
 }

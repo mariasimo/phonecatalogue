@@ -4,7 +4,6 @@ import { startGetPhones } from '../../actions';
 import Navbar from '../Navbar/Navbar';
 import Loader from '../Loader/Loader';
 import './PhoneDetails.scss'
-import Footer from '../Footer/Footer';
 
 function PhoneDetail(props) { 
     const dispatch = useDispatch();

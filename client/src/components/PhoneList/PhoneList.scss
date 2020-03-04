@@ -9,12 +9,29 @@ main.phone-list {
     .content {
         display: flex;
         flex-wrap: wrap;
-        margin: -1%;
        
         > div {
-            width: 31.333%;
-            margin: 1%;
+            width: 100%;
+            margin: 0 0 1.6rem;
         }
-    }
+
+        @media(min-width:$bp-medium) {
+            margin: -2%;
+
+            > div {
+                width: 46%;
+                margin: 2%;
+            }
+        }
+
+        @media(min-width:$bp-large) {
+            margin: -1%;
+
+            > div {
+                width: 31.333%;
+                margin: 1%;
+            }
+        }
+    }  
 }
 

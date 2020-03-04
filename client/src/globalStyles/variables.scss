@@ -10,7 +10,14 @@ $gradient: linear-gradient(157deg,#17ae8e,#3c7f72);
 
 //structure
 $width: 100%;
-$max-width: 96rem;
+$max-width: 88rem;
+
+// Media queries
+$bp-x-small: 400px;
+$bp-small: 600px;
+$bp-medium: 800px;
+$bp-large: 1000px;
+$bp-x-large: 1200px;
 
 //measure
 $m1: 8rem;
@@ -26,12 +33,19 @@ $font-main: 'Public Sans', sans-serif;
 
 //font sizes
 $f1: 5.6rem;
-$f2: 3.2rem;
-$f3: 2.4rem;
-$f4: 1.25rem;
+$f2: 2.4rem;
+$f3: 1.6rem;
+$f4: 1.1rem;
 $f5: 1rem;
 
+@media(min-width:$bp-large) {
+    $f1: 5.6rem;
+    $f2: 3.2rem;
+    $f3: 2.4rem;
+    $f4: 1.25rem;
+}
 
 //Line height
 $lh-heading: 1.1;
 $lh-body: 1.5;
+
