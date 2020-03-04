@@ -1,10 +1,6 @@
 @import '../../globalStyles/variables.scss';
 
 .phone-card {
-    box-shadow: 0 0 4px transparentize($grey, .8);
-    border-radius: .2rem;
-    padding: $m6 $m4 $m4;
-    background-color: $white;
     display: flex;
     align-items: center;
     justify-content: center;

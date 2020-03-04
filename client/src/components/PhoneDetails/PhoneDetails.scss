@@ -3,9 +3,10 @@
 .phone-detail {
     .wrapper {
         display: flex;
+        flex-wrap: wrap;
 
         > div  {
-            width: 50%;
+            width: 100%;
         }
 
         .image {
@@ -15,12 +16,51 @@
         }
 
         .content {
-            padding: $m3;
+            padding: $m3 0;
+
+            h1 {
+                color: $grey;
+            }
+
+            h2 {
+                color: $dark-primary
+            }
+
+            h1, h2 {
+                margin-top: $m6;
+            }
+
+            .characteristics {
+                border-top: 1px solid $light-grey;
+                margin-top: 2rem;
+
+                .color {
+                    width: $m3;
+                    height: $m3;
+                    border-radius: 50%;
+                    border: 3px solid $white;
+                    box-shadow: 0 0 4px rgba($grey, .25);
+                    padding: $m6;
+                }
+
+                p {
+                    margin: $m6 0;
+                }
+            }
+        }
+
+        @media(min-width:$bp-medium) {
+
+            > div  {
+                width: 50%;
+            }
+            .content {
+                padding: $m3;
+            }
         }
     }
-    h1 {
-        color: $grey;
-    }
+
+    
 }
 
 

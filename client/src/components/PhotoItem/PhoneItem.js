@@ -5,7 +5,7 @@ import './PhoneItem.scss'
 export default function PhoneItem(props) {
     const {phone} = props;
     return (
-        <div className="phone-card">
+        <div className="phone-card card">
             <Link to={'/phones/' + phone.id}>
                 <div className="phone-image">
                     <img src={`/`+ phone.imageFileName} alt={props.phone.name}/>

@@ -23,12 +23,22 @@ function PhoneDetail(props) {
             <div className="wrapper">
             {props.phone ? (
                 <>
-                    <div className="image">
+                    <div className="image card">
                       <img src={`/`+ phone.imageFileName} alt={props.phone.name}/>
                     </div>
                     <div className="content">
+                        <h2>{phone.manufacturer}</h2>
                         <h1>{phone.name}</h1>
+                        <div><p class="tag">{phone.price + ' €'}</p></div>
                         <p>{phone.description}</p>
+
+                        <div class="characteristics">
+                            <h3 class="small">Characteristics:</h3>
+                            <div class={"color " + phone.color}></div>
+                            <p>Screen: {phone.screen}</p>
+                            <p>Processor: {phone.processor}</p>
+                            <p>Ram: {phone.ram}</p>
+                        </div>
                     </div>
                 </>
                 ) : <Loader/> }

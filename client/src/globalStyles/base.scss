@@ -12,6 +12,11 @@ body {
     background-color: lighten($light-grey, 10);
 }
 
+.grey {background-color: $medium-grey}
+.black {background-color: $dark}
+.blue {background-color: $blue}
+.white {background-color: $white}
+
 .wrapper {
     max-width: $max-width;
     padding: $m4;
@@ -53,6 +58,11 @@ h1 {
     font-weight: 700;
     line-height: $lh-heading;
     letter-spacing: -0.025em;
+
+
+    @media(min-width:$bp-small) {
+        font-size: $f1;
+    }
 }
 
 .small {
@@ -89,6 +99,13 @@ h1 {
     display: inline;
     padding: $m7 $m6;
     border-radius: .2rem;
+}
+
+.card {
+    box-shadow: 0 0 4px transparentize($grey, .8);
+    border-radius: .2rem;
+    padding: $m6 $m4 $m4;
+    background-color: $white;
 }
 
 
