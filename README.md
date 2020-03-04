@@ -6,7 +6,9 @@ Home, Phone list and Phone Detail. It also have a 404 page and an error connecti
 
 
 
-####📁 Download the project
+📁 
+
+####Download the project 
 
 ```
 git clone https://github.com/mariasimo/phonecatalogue.git
@@ -14,7 +16,9 @@ git clone https://github.com/mariasimo/phonecatalogue.git
 
 
 
-####🚀 Run the project
+🚀
+
+####Run the project
 
 Project is divided in two main folders. Client and Server.
 
@@ -41,7 +45,9 @@ Visit http://localhost:3000
 
 
 
-#### 🏗 Built with
+#### 🏗 
+
+#### Built with
 
 - React — https://github.com/facebook/react
 - Redux — https://github.com/reduxjs/redux
