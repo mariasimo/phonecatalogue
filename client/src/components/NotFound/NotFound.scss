@@ -1,0 +1,13 @@
+@import '../../globalStyles/variables.scss';
+
+main.not-found {
+    margin-top: 0;
+    background: $primary-bg;
+    color: $dark;
+    min-height: 88vh;
+     
+    p {
+        margin-bottom: $m3;
+    }
+}
+

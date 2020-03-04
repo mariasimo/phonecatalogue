@@ -4,5 +4,6 @@ import axios from 'axios';
 export default function apiCall (method, url) {
     return axios(url, {
         method
-    }).then(response => response.data)
+    })
+    .then(response => response.data)
 }

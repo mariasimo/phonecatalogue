@@ -10,7 +10,8 @@ const PhoneDetail = () => {
     const dispatch = useDispatch();
     const {id} = useParams()
     const phone = useSelector(state => state.phones[id])
-
+    const error = useSelector(state => state.error)
+    
     useEffect(_ => {
         if(!phone) {
             dispatch(startGetPhones());
@@ -22,29 +23,33 @@ const PhoneDetail = () => {
         <Navbar isHome={false}/>
         <main className="phone-detail">
             <div className="wrapper">
-            {phone ? (
-                <>
-                    <div className="image card">
-                      <img src={`/`+ phone.imageFileName} alt={phone.name}/>
-                    </div>
-                    <div className="content">
-                        <h2>{phone.manufacturer}</h2>
-                        <h1>{phone.name}</h1>
-                        <div><p className="tag">{phone.price + ' €'}</p></div>
-                        <p>{phone.description}</p>
-
-                        <div className="characteristics">
-                            <h3 className="small">Characteristics:</h3>
-                            <div className={"color " + phone.color}></div>
-                            <ul>
-                                <li><span>Screen:</span> {phone.screen}</li>
-                                <li><span>Processor:</span> {phone.processor}</li>
-                                <li><span>Ram:</span> {phone.ram}</li>
-                            </ul>
+            <div><h1>Phone Detail</h1></div>
+            {error 
+                ?   <p class="error">{error}</p> 
+                :   ( phone 
+                    ? ( <>
+                        <div className="image card">
+                          <img src={`/`+ phone.imageFileName} alt={phone.name}/>
                         </div>
-                    </div>
-                </>
-                ) : <Loader/> }
+                        <div className="content">
+                            <h2>{phone.manufacturer}</h2>
+                            <h1>{phone.name}</h1>
+                            <div><p className="tag">{phone.price + ' €'}</p></div>
+                            <p>{phone.description}</p>
+    
+                            <div className="characteristics">
+                                <h3 className="small">Characteristics:</h3>
+                                <div className={"color " + phone.color}></div>
+                                <ul>
+                                    <li><span>Screen:</span> {phone.screen}</li>
+                                    <li><span>Processor:</span> {phone.processor}</li>
+                                    <li><span>Ram:</span> {phone.ram}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </>) 
+                    : <Loader/>
+            ) }
             </div>
         </main>
         </>

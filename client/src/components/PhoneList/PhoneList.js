@@ -9,6 +9,8 @@ import { startGetPhones } from '../../actions';
 const PhoneList = () => {
     const dispatch = useDispatch();
     const phones = useSelector(state => state.phones);
+    const error = useSelector(state => state.error);
+   
    
     useEffect(_ => {
         if(phones.length === 0) {
@@ -21,13 +23,15 @@ const PhoneList = () => {
         <Navbar isHome={false}/>
         <main className="phone-list">
             <div className="wrapper">
-                <h1>Phone List</h1>
+                <h1>Phone List </h1>
                 <div className="content">
-                    {phones.length 
+                    {error 
+                    ?   <p class="error">{error}</p> 
+                    :   (phones.length 
                         ? phones.map(phone => (
                             <PhoneItem key={phone.id} phone={phone}/>
                         ))  
-                        : <Loader/>
+                        : <Loader/>)
                     }
                 </div>
             </div>
